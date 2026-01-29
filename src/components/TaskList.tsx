@@ -11,7 +11,7 @@ type Props = {
   onDelete: (taskId: string) => void;
   onSaveTitle: (taskId: string, title: string) => void;
 
-  // not used in UI yet (kept for easy extension)
+  
   onAddSubtask: (taskId: string, title: string) => void;
   onToggleSubtask: (taskId: string, subtaskId: string) => void;
   onDeleteSubtask: (taskId: string, subtaskId: string) => void;

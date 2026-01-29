@@ -32,6 +32,7 @@ export default function TaskCard({
   const overdue = isOverdue(task.dueDate);
 
   function save() {
+    console.log("Saving title:", draft);
     onSaveTitle(draft);
   }
 

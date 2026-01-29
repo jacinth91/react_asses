@@ -31,19 +31,19 @@ export default function SideBar({
 
   return (
     <>
-      {/* Desktop sidebar */}
+      
       <aside className={`hidden lg:block ${base}`}>
         <Content />
       </aside>
 
-      {/* Tablet placeholder */}
+  
       <aside className={`hidden md:block lg:hidden ${base}`}>
         <div className="text-sm text-zinc-600 dark:text-zinc-300">
           Sidebar collapsed (tablet)
         </div>
       </aside>
 
-      {/* Mobile sidebar */}
+    
       {mobileOpen && (
         <div
           className="lg:hidden fixed inset-0 z-40 bg-black/60"
@@ -82,7 +82,7 @@ export default function SideBar({
 
     return (
       <div className="space-y-6">
-        {/* Header */}
+        
         <div className="flex items-center justify-between">
           <div className="font-semibold text-lg">Todo List</div>
           <button
@@ -95,7 +95,7 @@ export default function SideBar({
           </button>
         </div>
 
-        {/* Projects */}
+      
         <div>
           <div className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-2">
             Projects
@@ -130,7 +130,7 @@ export default function SideBar({
           </div>
         </div>
 
-        {/* Labels */}
+     
         <div>
           <div className="text-xs uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-2">
             Labels
@@ -149,7 +149,7 @@ export default function SideBar({
           </div>
         </div>
 
-        {/* Theme toggle */}
+    
         <button
           onClick={onToggleDark}
           className="w-full px-3 py-2 rounded-xl text-sm
