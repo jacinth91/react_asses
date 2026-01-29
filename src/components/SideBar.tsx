@@ -15,7 +15,7 @@ type Props = {
   onCloseMobile: () => void;
 };
 
-export default function Sidebar({
+export default function SideBar({
   projects,
   labels,
   selectedProject,

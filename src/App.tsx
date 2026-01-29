@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { v4 as uuid } from "uuid";
-import Sidebar from "./components/Sidebar";
+import SideBar from "./components/SideBar";
 import TopBar from "./components/TopBar";
 import TaskList from "./components/TaskList";
 import NewTaskPanel from "./components/NewTaskPanel";
@@ -173,7 +173,7 @@ export default function AppShell() {
 
       <div className="max-w-[1400px] mx-auto p-4 lg:p-6">
         <div className="grid grid-cols-1 lg:grid-cols-[280px_1fr_360px] gap-4">
-          <Sidebar
+          <SideBar
             projects={projects}
             labels={labels}
             selectedProject={selectedProject}
